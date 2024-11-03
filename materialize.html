@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elise's Pumpkin Loaf Bakery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external stylesheet -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="header-bg">
+        <div class="nav-wrapper">
+            <ul>
+                <li><a href="index.html">Bakery Home</a></li>
+                <li><a href="about.html">Contact Information</a></li>
+                <li><a href="sisterlocation.html">Expanding Location</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="section header-bg center-align">
+        <h1 class="white-text">Welcome to Elise's Pumpkin Loaf Bakery</h1>
+        <p class="white-text">Freshly Baked Goodness Every Day</p>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about" class="section section-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h2>About Us</h2>
+                    <p><strong>Elise's Pumpkin Loaf Bakery</strong> is committed to being an active part of the Oxford community as a family-owned small business. We have curated a unique vibe of relaxation and coziness, inviting customers to spend time in our comfy seating areas.</p>
+                    <p>While our specialty is pumpkin loaves, our menu diversifies with lattes, espressos, coffee cakes, cupcakes, sourdough loaves, and tarts. Experience the <u>Elise's Pumpkin Loaves</u> difference.</p>
+                </div>
+                <div class="col s12 m6">
+                    <img src="images/chocolatecake.png" alt="Bakery Image" class="responsive-img shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <div id="menu" class="section">
+        <div class="container">
+            <h2>Customer Favorites</h2>
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sourdough Bread</td>
+                        <td>A classic sourdough bread with a crispy crust.</td>
+                        <td>$4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Croissant</td>
+                        <td>Flaky croissant filled with rich chocolate.</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Blueberry Muffin</td>
+                        <td>Moist muffin packed with fresh blueberries.</td>
+                        <td>$2.50</td>
+                    </tr>
+                    <tr>
+                        <td>Cheese Danish</td>
+                        <td>Soft Danish pastry with a creamy cheese filling.</td>
+                        <td>$3.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Pumpkin Loaves Section -->
+    <div class="container">
+        <h2>Pumpkin Loaves (Our Specialty Menu)</h2>
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nutmeg Pumpkin Loaf</td>
+                    <td>Our classic loaf with a nutty twist. (Contains nuts)</td>
+                    <td>$5.95</td>
+                </tr>
+                <tr>
+                    <td>Vanilla Glazed Loaf</td>
+                    <td>Classic loaf drizzled with vanilla bean sweet glaze.</td>
+                    <td>$4.95</td>
+                </tr>
+                <tr>
+                    <td>Cinnamon Snap Loaf</td>
+                    <td>Classic loaf with a warm cinnamon blend.</td>
+                    <td>$6.95</td>
+                </tr>
+                <tr>
+                    <td>The Classic</td>
+                    <td>Original loaf made with in-house pumpkin puree.</td>
+                    <td>$4.95</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="image-gallery">
+        <img src="images/cinnamonpumpkinloaf.jpg" alt="Cinnamon Loaf" class="responsive-img">
+        <img src="images/nutpumpkinloaf.jpg" alt="Nut Pumpkin Loaf" class="responsive-img">
+        <img src="images/pumpkinloafclassic.jpg" alt="Classic Pumpkin Loaf" class="responsive-img">
+        <img src="images/vanillaglazedpumpkinloaf.jpg" alt="Vanilla Glazed Pumpkin Loaf" class="responsive-img">
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section section-bg">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="row">
+                <div class="col s12 m6">
+                    <form>
+                        <div class="input-field">
+                            <input id="name" type="text" class="validate" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="message" class="materialize-textarea" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn waves-effect waves-light">Send</button>
+                    </form>
+                </div>
+                <div class="col s12 m6">
+                    <h5>Visit Us</h5>
+                    <p>123 Bakery St,<br> Sweet City, SC 12345</p>
+                    <p><i class="material-icons">phone</i> (123) 456-7890</p>
+                    <p><i class="material-icons">email</i> contact@elisespumpkinloafbakery.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Section -->
+    <div class="container">
+        <h3>Help us select our next best seller!</h3>
+        <form>
+            <label for="flavorSelect">Select your favorite pumpkin loaf flavor:</label>
+            <select id="flavorSelect">
+                <option>Pumpkin Spice</option>
+                <option>Chocolate Chip Pumpkin</option>
+                <option>Cinnamon Swirl</option>
+                <option>Vanilla Glazed</option>
+            </select>
+            <br><br>
+            <input type="button" onclick="submitFlavor()" value="Submit Flavor">
+        </form>
+        <p id="flavorMessage"></p>
+        <script>
+            function submitFlavor() {
+                let flavorSelect = document.getElementById("flavorSelect");
+                let selectedFlavor = flavorSelect.options[flavorSelect.selectedIndex].text;
+                let flavorMessage = document.querySelector("#flavorMessage");
+                flavorMessage.innerHTML = "Great choice! You selected the " + selectedFlavor + " flavor. We hope you enjoy it!";
+            }
+        </script>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer header-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <p class="white-text">&copy; 2024 Elise's Pumpkin Loaf Bakery. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

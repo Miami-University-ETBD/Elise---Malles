@@ -1,92 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <title>Elise's Pumpkin Loaf Bakery</title>
 </head>
 <body>
-    <!-- Where autumnal flavors come together in a relaxed environment! -->
+    <div class="navbar">
+        <a href="index.html">Bakery Home</a>
+        <a href="about.html">Contact Information and Social Media</a>
+        <a href="sisterlocation.html">Information about Expanding Location</a>
+    </div>
+
     <header>
         <h1>Welcome to Elise's Pumpkin Loaf Bakery</h1>
     </header>
 
-    <!-- Our pastry chefs pride themselves off of a an impressive array of culinary skills. What sets our bakery apart is our staff, who truly care about every individual's experince, one of quality and care  -->
     <div class="container">
-        <!-- We also pride ourselves off of fresh, never frozen ingredients. We belive the key to making delicious patrsies is what you put in. That is why we we support local farms adn farmer's markets  -->
-        <div class="main-content">
-            <!-- Section for bakery introduction -->
-            <section>
-                <h2>What we strive for as a company</h2>
-                <p><strong>Elise's Punpkin Loaf Bakery</strong> Is committed to being an active part in the Oxford community as one of the many small business owners, which we like to consider a family. We like to think we have spcecially curated a unique vibe of relaxation and coziness. There is too much hustle and bustle in everyday life to not have a spot for just rest, which is why we invite every customer to spend some time in our comfy seating areas, lovesacks included!.</p>
-                <p>We also belive that our menu, while mainly autumnal, encapsukates the fact that fall flavors can be enjoyed every season. While our speciality is pumpkin loafs, our menu diversifies from lattes, espressos, coffee cakes, cupcakes, sourdough loafs, and tarts. Give us a stop by to enxperince the <u>Elise's pumpkin Loaves</u> difference.</p>
+        <p><!-- Where autumnal flavors come together in a relaxed environment! --></p>
+        <p><!-- Our pastry chefs pride themselves on an impressive array of culinary skills. What sets our bakery apart is our staff, who truly care about every individual's experience, one of quality and care. --></p>
 
-                <h2>Our Menu</h2>
-                <ul>
-                    <li>Cold Foam Lattes</li>
-                    <li>Fruit Tarts</li>
-                    <li>Sourdough Loafs</li>
-                    <li>Pumpkin Loaves</li>
-                </ul>
-            
-                <h2>Pumpkin Loaves (our specialty menu)</h2>
-                <table>
-                    <tr>
-                        <th>Nutmeg Pumpkin Loaf</th>
-                        <th>Our classic loaf with a nutty twist, good for all you nuts out there! (contains: nuts, do not consume if you are allergic to nuts)</th>
-                        <th>$5.95</th>
-                    </tr>
-                    <tr>
-                        <td>Vanilla Glazed Loaf</td>
-                        <td>If the classis loaf isn't as sweet as you need, our classic loaf drizzled with vanilla bean sweet glaze </td>
-                        <td>$4.95</td>
-                    </tr>
-                    <tr>
-                        <td>Cinnamon Snap Loaf</td>
-                        <td>Classic Loaf witha  warm cinnamon blend and slight notes of pepperminte</td>
-                        <td>$6.95</td>
-                    </tr>
-					<tr>
-                        <td> The Classic</td>
-                        <td>Our original loaf, made with an in-hpuse pumpkin puree that perfecrly encapsulates the sweet taste of pumpkin</td>
-                        <td>$4.95</td>
-                    </tr>
-					<h2>Cold Foam Lattes</h2>
-					<table>
-					<tr>
-					<td>Sweet Cream Cold Brew</td>
-					<td>Our sopecially formuklated in-house cold brew topped with a sweet cream cold foam, can be ordered in a small, medium, or large</td>
-					<td>$4.95</td>
-                    </tr>
-					<tr>
-					<td>Sweet Cream Pumpkin Cold Brew</td>
-					<td>Our sopecially formuklated in-house cold brew topped with a sweet cream pumpkin cold foam (made with real pumpkins), can be ordered in a small, medium, or large</td>
-					<td>$5.95</td>
-                    </tr>
-					<tr>
-					<td>Matcha Latte</td>
-					<td>A caffinated, creamy, and frothy tea-based drink, can be ordered in a small, medium, or large</td>
-					<td>$7.95</td>
-                    </tr>
-					<td>Peppermint Cream Latte</td>
-					<td>Our in-house cold brew topped with a whipped peppermint cream cold foam, can be orderd in a small, medium, or large</td>
-					<td>$8.95</td>
-                    </tr>
-					<h2>Sourdough Loaves</h2>
-					<td>Crusty, tangy brread with a chewy interior and airy texture/td>
-					<td>$7.00</td>
-					<h2>Fruit Tarts</h2>
-					<tr>
-                        <th>Classic tarty-tart</th>
-                        <th>A classic tart topped with fresh whipped cream, glazed kiwis, strawberries, and blueberries, and mandarin oranges</th>
-                        <th>$3.95</th>
-                    </tr>
-        <footer>
-            <p> 2024 Elise's Pumkpin Loaf Bakery. All rights reserved.</p>
-        </footer>
+        <section>
+            <h2>What we strive for as a company</h2>
+            <p><strong>Elise's Pumpkin Loaf Bakery</strong> is committed to being an active part of the Oxford community as one of the many small business owners, which we like to consider a family. We have specially curated a unique vibe of relaxation and coziness. There is too much hustle and bustle in everyday life to not have a spot for just rest, which is why we invite every customer to spend some time in our comfy seating areas, lovesacks included!</p>
+            <p>We also believe that our menu, while mainly autumnal, encapsulates the fact that fall flavors can be enjoyed every season. While our specialty is pumpkin loaves, our menu diversifies with lattes, espressos, coffee cakes, cupcakes, sourdough loaves, and tarts. Give us a stop by to experience the <u>Elise's Pumpkin Loaves</u> difference.</p>
+
+            <h2>Our Menu</h2>
+            <ul>
+                <li>Cold Foam Lattes</li>
+                <li>Fruit Tarts</li>
+                <li>Sourdough Loaves</li>
+                <li>Pumpkin Loaves</li>
+            </ul>
+
+            <h2>Pumpkin Loaves (our specialty menu)</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Nutmeg Pumpkin Loaf</td>
+                    <td>Our classic loaf with a nutty twist, good for all you nuts out there! (contains: nuts, do not consume if you are allergic to nuts)</td>
+                    <td>$5.95</td>
+                </tr>
+                <tr>
+                    <td>Vanilla Glazed Loaf</td>
+                    <td>If the classic loaf isn't sweet enough for you, try our classic loaf drizzled with vanilla bean sweet glaze.</td>
+                    <td>$4.95</td>
+                </tr>
+                <tr>
+                    <td>Cinnamon Snap Loaf</td>
+                    <td>Classic loaf with a warm cinnamon blend and slight notes of peppermint.</td>
+                    <td>$6.95</td>
+                </tr>
+                <tr>
+                    <td>The Classic</td>
+                    <td>Our original loaf, made with an in-house pumpkin puree that perfectly encapsulates the sweet taste of pumpkin.</td>
+                    <td>$4.95</td>
+                </tr>
+            </table>
+
+            <div class="image-gallery">
+                <img src="images/cinnamonpumpkinloaf.jpg" alt="Cinnamon Loaf">
+                <img src="images/nutpumpkinloaf.jpg" alt="Nut Pumpkin Loaf">
+                <img src="images/pumpkinloafclassic.jpg" alt="Classic Pumpkin Loaf">
+                <img src="images/vanillaglazedpumpkinloaf.jpg" alt="Vanilla Glazed Pumpkin Loaf">
+            </div>
+
+            <h2>Cold Foam Lattes</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Sweet Cream Cold Brew</td>
+                    <td>Our specially formulated in-house cold brew topped with a sweet cream cold foam, can be ordered in small, medium, or large.</td>
+                    <td>$4.95</td>
+                </tr>
+                <tr>
+                    <td>Sweet Cream Pumpkin Cold Brew</td>
+                    <td>Our specially formulated in-house cold brew topped with a sweet cream pumpkin cold foam (made with real pumpkins), can be ordered in small, medium, or large.</td>
+                    <td>$5.95</td>
+                </tr>
+                <tr>
+                    <td>Matcha Latte</td>
+                    <td>A caffeinated, creamy, and frothy tea-based drink, can be ordered in small, medium, or large.</td>
+                    <td>$7.95</td>
+                </tr>
+                <tr>
+                    <td>Peppermint Cream Latte</td>
+                    <td>Our in-house cold brew topped with a whipped peppermint cream cold foam, can be ordered in small, medium, or large.</td>
+                    <td>$8.95</td>
+                </tr>
+            </table>
+
+            <h2>Sourdough Loaves</h2>
+            <table>
+                <tr>
+                    <td>Crusty, tangy bread with a chewy interior and airy texture.</td>
+                    <td>$7.00</td>
+                </tr>
+            </table>
+
+            <h2>Fruit Tarts</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Classic Tarty-Tart</td>
+                    <td>A classic tart topped with fresh whipped cream, glazed kiwis, strawberries, blueberries, and mandarin oranges.</td>
+                    <td>$3.95</td>
+                </tr>
+            </table>
+
+            <h3>Enter your phone number here to be entered into our monthly cookie drawing!</h3>
+            <h2>Help us select our next best seller!</h2>
+            <form>
+                <label for="flavorSelect">Select your favorite pumpkin loaf flavor:</label>
+                <select id="flavorSelect">
+                    <option>Pumpkin Spice</option>
+                    <option>Chocolate Chip Pumpkin</option>
+                    <option>Cinnamon Swirl</option>
+                    <option>Vanilla Glazed</option>
+                </select>
+                <br><br>
+                <input type="button" onclick="submitFlavor()" value="Submit Flavor">
+            </form>
+            <p id="flavorMessage"></p>
+
+            <script>
+                function submitFlavor() {
+                    let flavorSelect = document.getElementById("flavorSelect");
+                    let selectedFlavor = flavorSelect.options[flavorSelect.selectedIndex].text;
+                    let flavorMessage = document.querySelector("#flavorMessage");
+                    flavorMessage.innerHTML = "Great choice! You selected the " + selectedFlavor + " flavor. We hope you enjoy it!";
+                }
+            </script>
+        </section>
+    </div>
+
+    <footer>
+        <p>2024 Elise's Pumpkin Loaf Bakery. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
-	
-                    
