@@ -13,6 +13,7 @@
            <a href="index.html">Bakery Home</a>
            <a href="about.html">Conract Information and Social Medias</a>
            <a href="sisterlocation.html">Information about Expanding Location</a>
+           <link rel="stylesheet" href="styles.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <a href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf" target="_blank">Apply Today!</a>
   </div>
