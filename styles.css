@@ -1,78 +1,145 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f3e3;
-    color: #333;
-    line-height: 1.6;
+
+title {
+    color: #b5651d; /* Brown */
 }
 
-/* Header Styles */
 header {
-    background-color: #e58b2d;
+    background-color: #d2691e; /* Chocolate color */
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 1em;
+    font-size: 2em;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+h2 {
+    color: #ff8c00; /* Dark orange */
+    margin-top: 1em;
 }
 
-header h2 {
-    margin: 10px 0 0;
-    font-size: 1.5em;
+p {
+    line-height: 1.6;
+    margin-bottom: 1em;
 }
 
-/* Section Styles */
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
+strong {
+    font-weight: bold;
 }
 
-/* Menu Table Styles */
-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 100%;
+em {
+    font-style: italic;
 }
 
-th, td {
-    border: 1px solid #e58b2d;
-    padding: 10px;
-    text-align: center;
+u {
+    text-decoration: underline;
 }
 
-th {
-    background-color: #e58b2d;
-    color: white;
+ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
 }
 
-/* Footer Styles */
+li {
+    margin-bottom: 0.5em;
+}
+
 footer {
-    background-color: #e58b2d;
+    background-color: #8b4513; /* Saddle brown */
     color: white;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
+    padding: 1em 0;
     width: 100%;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
+section {
+    padding: 1em;
+    background-color: #ffe4b5; /* Lemon chiffon */
+    margin: 1em 10%;
+    border-radius: 8px;
 }
 
-/* Links */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 1em 0;
+}
+
 a {
-    color: #e58b2d;
+    color: #d2691e; /* Chocolate color */
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff8c00; /* Dark orange */
+    color: white;
+}
+
+td {
+    background-color: #f5f5dc; /* Light beige for table cells */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the links */
+    background-color: #f8b400; /* Light yellow background */
+    padding: 10px 20px; /* Padding around the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar a {
+    color: #333; /* Dark text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding around each link */
+    margin: 0 10px; /* Margin between links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.navbar a:hover {
+    background-color: #333; /* Dark background on hover */
+    color: #fff; /* White text on hover */
+}.image-gallery {
+    display: flex;
+    justify-content: center; /* Center the images in the gallery */
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    gap: 15px; /* Space between images */
+    padding: 20px; /* Padding around the gallery */
+}
+
+.image-gallery img {
+    width: 200px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
