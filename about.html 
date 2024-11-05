@@ -13,6 +13,8 @@
            <a href="index.html">Bakery Home</a>
            <a href="about.html">Conract Information and Social Medias</a>
            <a href="sisterlocation.html">Information about Expanding Location</a>
+           <li><a href=materialize.html>Expanding Location</a></li>
+           <li><a href=materialize2.html>Expanding Location</a></li>
            <link rel="stylesheet" href="styles.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <a href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf" target="_blank">Apply Today!</a>
@@ -32,10 +34,26 @@
     </section>
 
     <section>
-        <h2>Follow Our Socials!</h2>
-        <p><strong>Instagram:</strong> @Elise’sPumpkinloaves</p>
-        <p><strong>Facebook:</strong> @Elise’sPumpkinloaves</p>
-        <p><strong>TikTok:</strong> @Elise’sPumpkinloaves</p>
+        <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>Instagram</div>
+              <div class="collapsible-body">
+                <span><strong>Instagram:</strong> @Elise’sPumpkinloaves</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Facebook</div>
+              <div class="collapsible-body">
+                <span><strong>Facebook:</strong> @Elise’sPumpkinloaves</span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>TikTok</div>
+              <div class="collapsible-body">
+                <span><strong>TikTok:</strong> @Elise’sPumpkinloaves</span>
+              </div>
+            </li>
+        </ul>          
     </section>
     <section>
     <h2>Recreate the Fun at Home!</h2>

@@ -12,6 +12,8 @@
            <a href="index.html">Bakery Home</a>
            <a href="about.html">Conract Information and Social Medias</a>
            <a href="sisterlocation.html">Information about Expanding Location</a>
+           <li><a href=materialize.html>Expanding Location</a></li>
+           <li><a href=materialize2.html>Expanding Location</a></li>
            <link rel="stylesheet" href="styles.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
        </div>
