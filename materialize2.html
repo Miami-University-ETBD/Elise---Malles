@@ -15,7 +15,7 @@
                 <li><a href="about.html">Contact Information</a></li>
                 <li><a href="sisterlocation.html">Expanding Location</a></li>
                 <li><a href=materialize.html>Expanding Location</a></li>
-                <li><a href=materialize2.html>Expanding Location</a></li>
+                <li><a href=materialize.html2>Expanding Location</a></li>
                 <link rel="stylesheet" href="styles.css"> <!-- Link to the external stylesheet --
             </ul>
         </div>
@@ -80,42 +80,6 @@
         </div>
     </div>
 
-    <!-- Pumpkin Loaves Section -->
-    <div class="container">
-        <h2>Pumpkin Loaves (Our Specialty Menu)</h2>
-        <table class="highlight">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Nutmeg Pumpkin Loaf</td>
-                    <td>Our classic loaf with a nutty twist. (Contains nuts)</td>
-                    <td>$5.95</td>
-                </tr>
-                <tr>
-                    <td>Vanilla Glazed Loaf</td>
-                    <td>Classic loaf drizzled with vanilla bean sweet glaze.</td>
-                    <td>$4.95</td>
-                </tr>
-                <tr>
-                    <td>Cinnamon Snap Loaf</td>
-                    <td>Classic loaf with a warm cinnamon blend.</td>
-                    <td>$6.95</td>
-                </tr>
-                <tr>
-                    <td>The Classic</td>
-                    <td>Original loaf made with in-house pumpkin puree.</td>
-                    <td>$4.95</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
     <div class="image-gallery">
         <img src="images/cinnamonpumpkinloaf.jpg" alt="Cinnamon Loaf" class="responsive-img">
         <img src="images/nutpumpkinloaf.jpg" alt="Nut Pumpkin Loaf" class="responsive-img">
@@ -125,11 +89,6 @@
 
     <h2>Cold Foam Lattes</h2>
             <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                </tr>
                 <tr>
                     <td>Sweet Cream Cold Brew</td>
                     <td>Our specially formulated in-house cold brew topped with a sweet cream cold foam, can be ordered in small, medium, or large.</td>
@@ -163,11 +122,6 @@
             <h2>Fruit Tarts</h2>
             <table>
                 <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                </tr>
-                <tr>
                     <td>Classic Tarty-Tart</td>
                     <td>A classic tart topped with fresh whipped cream, glazed kiwis, strawberries, blueberries, and mandarin oranges.</td>
                     <td>$3.95</td>
@@ -197,7 +151,7 @@
                 </div>
                 <div class="col s12 m6">
                     <h5>Visit Us</h5>
-                    <p>533 S Poplar Street<br>Oxford Ohio,</p>
+                    <p>533 S Poplar Street<br> Oxford, Oio 45056</p>
                     <p><i class="material-icons">phone</i>(555) 847-7834</p>
                     <p><i class="material-icons">email</i> contact@elisespumpkinloafbakery.com</p>
                 </div>
@@ -239,7 +193,77 @@
                 </div>
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     </footer>
+    <div id="radio-section" class="section container">
+        <h2>Select Your Favorite Pumpkin Loaf Flavor</h2>
+        <form>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Cinnamon Pumpkin Loaf" onclick="displayPastry()"/>
+                    <span>Cinnamon Pumpkin Loaf</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Nut Pumpkin Loaf" onclick="displayPastry()"/>
+                    <span>Nut Pumpkin Loaf</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Vanilla Glazed Pumpkin Loaf" onclick="displayPastry()"/>
+                    <span>Vanilla Glazed Pumpkin Loaf</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Classic Pumpkin Loaf" onclick="displayPastry()"/>
+                    <span>Classic Pumpkin Loaf</span>
+                </label>
+            </p>
+        </form>
+        <div id="pastry-response"></div>
+    </div>
+ <!-- Email Feedback Section -->
+ <div id="feedback-section" class="section container">
+    <h2>Follow our various socials for updates, subscrbve to our loyalty program for updates on the shop by submitting your email!</h2>
+    <form onsubmit="submitEmail(event)">
+        <div class="input-field">
+            <input id="email" type="email" required>
+            <label for="email">Email</label>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+    </form>
+    <div id="email-response"></div>
+</div>
+<script>
+    // Initialize modal
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+
+
+    // Function to display selected pastry
+    function displayPastry() {
+        const selectedPastry = document.querySelector('input[name="pastry"]:checked').value;
+        document.getElementById('pastry-response').innerText = `You selected: ${selectedPastry}`;
+    }
+    // Function to handle email subscription form submission
+    function submitEmail(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+        document.getElementById('email').value = ''; // Clear the input
+
+
+        // Display modal
+        const modalText = document.getElementById('modal-content-text');
+        modalText.innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+        const modal = M.Modal.getInstance(document.getElementById('modal1'));
+        modal.open();
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </body>
-    </html>
+</html>
