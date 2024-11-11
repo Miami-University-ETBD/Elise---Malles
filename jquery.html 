@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elise's Pumpkin Loaf Bakery</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- Link to Custom Styles (styles.css) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- jQuery Script to Handle Interaction -->
+    <script>
+        $(document).ready(function(){
+            // Hide paragraph when clicked
+            $("p").click(function(){
+                $(this).hide();
+            });
+
+            // Add text before and after images
+            $("img").before(function(){
+                return "<p>Freshly baked and ready to enjoy!</p>";
+            });
+
+            $("img").after(function(){
+                return "<p>Delicious " + $(this).attr('alt') + " - Come try it today!</p>";
+            });
+
+            // Slide down panel when #flip is clicked
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            });
+        });
+    </script>
+
+    <!-- Style for the Panel and Flip Interaction -->
+    <style>
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header of the website -->
+    <header>
+        <h1>Welcome to Elise's Pumpkin Loaf Bakery</h1>
+        <div class="navbar">
+            <a href="index.html">Bakery Home</a>
+            <a href="sisterlocation.html">Recipe Cards</a>
+            <a href="about.html">Celebrity Favorites</a>
+            <a href="materialize.html">Materialize</a>
+            <a href="materialize2.html">Materialize</a>
+            <a href="jquery.html">JQuery</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to Pumpkin Loaf Bakery</h1>
+
+        <!-- Specialty Pumpkin Loaves Menu Section -->
+        <h2>Pumpkin Loaves (Our Specialty Menu)</h2>
+
+        <!-- Table for Pumpkin Loaves -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nutmeg Pumpkin Loaf</td>
+                    <td>Our classic loaf with a nutty twist, good for all you nuts out there! (contains: nuts, do not consume if you are allergic to nuts)</td>
+                    <td>$5.95</td>
+                </tr>
+                <tr>
+                    <td>Vanilla Glazed Loaf</td>
+                    <td>If the classic loaf isn't sweet enough for you, try our classic loaf drizzled with vanilla bean sweet glaze.</td>
+                    <td>$4.95</td>
+                </tr>
+                <tr>
+                    <td>Cinnamon Snap Loaf</td>
+                    <td>Classic loaf with a warm cinnamon blend and slight notes of peppermint.</td>
+                    <td>$6.95</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="image-gallery">
+            <img src="images/cinnamonpumpkinloaf.jpeg" alt="Cinnamon Loaf">
+            <img src="images/nutpumpkinloaf.jpeg" alt="Nut Pumpkin Loaf">
+            <img src="images/pumpkinloafclassic.jpeg" alt="Classic Pumpkin Loaf">
+            <img src="images/vaniallglazedpumpkinloaf.jpeg" alt="Vanilla Glazed Pumpkin Loaf">
+        </div>
+
+        <div id="flip">Click to slide down panel</div>
+        <div id="panel">
+            <p>We are a small, locally run and operated business on the corner of High Street and S Poplar Street in the
+            historic downtown of Oxford, Ohio. We believe that customers should be able to taste the heart, soul, and
+            passion put into each of our products, which is why we make everything in-house but our heavily renowned
+            pastry chefs. We can pridefully say all of our ingredients come from the local Oxford area, because we are
+            committed to supporting a greater cause and giving back to the community who has truly given us everything.
+            Serving the Oxford Community since 2002, and committed to continue servicing for more to come!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elise's Pumpkin Loaf Bakery</title>>
+    <title>Elise's Pumpkin Loaf Bakery</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
 <body>
 
@@ -14,9 +16,9 @@
                 <li><a href="index.html">Bakery Home</a></li>
                 <li><a href="about.html">Contact Information</a></li>
                 <li><a href="sisterlocation.html">Expanding Location</a></li>
-                <li><a href=materialize.html>Expanding Location</a></li>
-                <li><a href=materialize.html2>Expanding Location</a></li>
-                <link rel="stylesheet" href="styles.css"> <!-- Link to the external stylesheet --
+                <li><a href="materialize.html">Expanding Location</a></li>
+                <a href="jquery.html">JQuery</a>
+                <li><a href="materialize2.html">Expanding Location</a></li> <!-- Fixed href link -->
             </ul>
         </div>
     </nav>
@@ -24,7 +26,7 @@
     <!-- Header Section -->
     <div class="section header-bg center-align">
         <h1 class="white-text">Welcome to Elise's Pumpkin Loaf Bakery</h1>
-        <p class="white-text">Where autumnal flavprs jpin together in a beautiful harmony with cozy vibes</p>
+        <p class="white-text">Where autumnal flavors join together in a beautiful harmony with cozy vibes.</p>
     </div>
 
     <!-- About Us Section -->
@@ -37,6 +39,7 @@
                     <p>While our specialty is pumpkin loaves, our menu diversifies with lattes, espressos, coffee cakes, cupcakes, sourdough loaves, and tarts. Experience the <u>Elise's Pumpkin Loaves</u> difference.</p>
                 </div>
                 <div class="col s12 m6">
+                    <!-- This section is empty, consider adding content here -->
                 </div>
             </div>
         </div>
@@ -56,8 +59,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Classc Pumpkin Loaf</td>
-                        <td>ur original loaf, made with an in-house pumpkin puree that perfectly encapsulates the sweet taste of pumpkin.</td>
+                        <td>Classic Pumpkin Loaf</td>
+                        <td>Our original loaf, made with an in-house pumpkin puree that perfectly encapsulates the sweet taste of pumpkin.</td>
                         <td>$4.95</td>
                     </tr>
                     <tr>
@@ -66,7 +69,7 @@
                         <td>$5.95</td>
                     </tr>
                     <tr>
-                        <td>Vanilla Glazed Loa</td>
+                        <td>Vanilla Glazed Loaf</td> <!-- Fixed typo -->
                         <td>If the classic loaf isn't sweet enough for you, try our classic loaf drizzled with vanilla bean sweet glaze.</td>
                         <td>$4.95</td>
                     </tr>
@@ -80,14 +83,18 @@
         </div>
     </div>
 
+    <!-- Image Gallery -->
     <div class="image-gallery">
-        <img src="images/cinnamonpumpkinloaf.jpg" alt="Cinnamon Loaf" class="responsive-img">
-        <img src="images/nutpumpkinloaf.jpg" alt="Nut Pumpkin Loaf" class="responsive-img">
-        <img src="images/pumpkinloafclassic.jpg" alt="Classic Pumpkin Loaf" class="responsive-img">
-        <img src="images/vanillaglazedpumpkinloaf.jpg" alt="Vanilla Glazed Pumpkin Loaf" class="responsive-img">
+        <img src="images/cinnamonpumpkinloaf.jpeg" alt="Cinnamon Loaf" class="responsive-img">
+        <img src="images/nutpumpkinloaf.jpeg" alt="Nut Pumpkin Loaf" class="responsive-img">
+        <img src="images/pumpkinloafclassic.jpeg" alt="Classic Pumpkin Loaf" class="responsive-img">
+        <img src="images/vanillaglazedpumpkinloaf.jpeg" alt="Vanilla Glazed Pumpkin Loaf" class="responsive-img">
     </div>
 
-    <h2>Cold Foam Lattes</h2>
+    <!-- Cold Foam Lattes Section -->
+    <div id="lattes" class="section">
+        <div class="container">
+            <h2>Cold Foam Lattes</h2>
             <table>
                 <tr>
                     <td>Sweet Cream Cold Brew</td>
@@ -110,23 +117,9 @@
                     <td>$8.95</td>
                 </tr>
             </table>
+        </div>
+    </div>
 
-            <h2>Sourdough Loaves</h2>
-            <table>
-                <tr>
-                    <td>Crusty, tangy bread with a chewy interior and airy texture.</td>
-                    <td>$7.00</td>
-                </tr>
-            </table>
-
-            <h2>Fruit Tarts</h2>
-            <table>
-                <tr>
-                    <td>Classic Tarty-Tart</td>
-                    <td>A classic tart topped with fresh whipped cream, glazed kiwis, strawberries, blueberries, and mandarin oranges.</td>
-                    <td>$3.95</td>
-                </tr>
-            </table>
     <!-- Contact Section -->
     <div id="contact" class="section section-bg">
         <div class="container">
@@ -151,37 +144,12 @@
                 </div>
                 <div class="col s12 m6">
                     <h5>Visit Us</h5>
-                    <p>533 S Poplar Street<br> Oxford, Oio 45056</p>
+                    <p>533 S Poplar Street<br> Oxford, OH 45056</p> <!-- Corrected typo in location -->
                     <p><i class="material-icons">phone</i>(555) 847-7834</p>
                     <p><i class="material-icons">email</i> contact@elisespumpkinloafbakery.com</p>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Feedback Section -->
-    <div class="container">
-        <h3>Help us select our next best seller!</h3>
-        <form>
-            <label for="flavorSelect">Select your favorite pumpkin loaf flavor:</label>
-            <select id="flavorSelect">
-                <option>Nut Pumpkin</option>
-                <option>Classic Pumpkin</option>
-                <option>Cinnamon Snap</option>
-                <option>Vanilla Glazed</option>
-            </select>
-            <br><br>
-            <input type="button" onclick="submitFlavor()" value="Submit Flavor">
-        </form>
-        <p id="flavorMessage"></p>
-        <script>
-            function submitFlavor() {
-                let flavorSelect = document.getElementById("flavorSelect");
-                let selectedFlavor = flavorSelect.options[flavorSelect.selectedIndex].text;
-                let flavorMessage = document.querySelector("#flavorMessage");
-                flavorMessage.innerHTML = "Great choice! You selected the " + selectedFlavor + " flavor. We hope you enjoy it!";
-            }
-        </script>
     </div>
 
     <!-- Footer -->
@@ -194,76 +162,16 @@
             </div>
         </div>
     </footer>
-    <div id="radio-section" class="section container">
-        <h2>Select Your Favorite Pumpkin Loaf Flavor</h2>
-        <form>
-            <p>
-                <label>
-                    <input name="pastry" type="radio" value="Cinnamon Pumpkin Loaf" onclick="displayPastry()"/>
-                    <span>Cinnamon Pumpkin Loaf</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input name="pastry" type="radio" value="Nut Pumpkin Loaf" onclick="displayPastry()"/>
-                    <span>Nut Pumpkin Loaf</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input name="pastry" type="radio" value="Vanilla Glazed Pumpkin Loaf" onclick="displayPastry()"/>
-                    <span>Vanilla Glazed Pumpkin Loaf</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input name="pastry" type="radio" value="Classic Pumpkin Loaf" onclick="displayPastry()"/>
-                    <span>Classic Pumpkin Loaf</span>
-                </label>
-            </p>
-        </form>
-        <div id="pastry-response"></div>
-    </div>
- <!-- Email Feedback Section -->
- <div id="feedback-section" class="section container">
-    <h2>Follow our various socials for updates, subscrbve to our loyalty program for updates on the shop by submitting your email!</h2>
-    <form onsubmit="submitEmail(event)">
-        <div class="input-field">
-            <input id="email" type="email" required>
-            <label for="email">Email</label>
-        </div>
-        <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
-    </form>
-    <div id="email-response"></div>
-</div>
-<script>
-    // Initialize modal
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.modal');
-        var instances = M.Modal.init(elems);
-    });
 
-
-    // Function to display selected pastry
-    function displayPastry() {
-        const selectedPastry = document.querySelector('input[name="pastry"]:checked').value;
-        document.getElementById('pastry-response').innerText = `You selected: ${selectedPastry}`;
-    }
-    // Function to handle email subscription form submission
-    function submitEmail(event) {
-        event.preventDefault();
-        const email = document.getElementById('email').value;
-        document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
-        document.getElementById('email').value = ''; // Clear the input
-
-
-        // Display modal
-        const modalText = document.getElementById('modal-content-text');
-        modalText.innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
-        const modal = M.Modal.getInstance(document.getElementById('modal1'));
-        modal.open();
-    }
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-</body>
-</html>
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+        // Function to display selected pastry
+        function displayPastry() {
+            const selectedPastry = document.querySelector('input[name="pastry"]:checked').value;
+            document.getElementById('pastry-response').innerText = `You selected: ${selectedPastry}`;
+        }
+ </script>
+ </body>
+ </html>
+ 
