@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <title>Elise’s Pumpkin Loaf Bakery</title>
 </head>
 
@@ -17,9 +18,7 @@
                 <a href="about.html">Conract Information and Social Medias</a>
                 <a href="sisterlocation.html">Information about Expanding Location</a>
                 <a href="jquery.html">JQuery</a>
-                <link rel="stylesheet"
-                <a href=materialize.html>Link to materialize page</a>
-                    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+                <a href="materialize.html">Link to materialize page</a>
                 <a href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf"
                     target="_blank">Apply Today!</a>
             </div>
@@ -46,15 +45,15 @@
         <h2>Follow Our Socials!</h2>
         <ul class="collapsible">
           <li>
-            <div class="collapsible-header"><i class="material-icons">instagram</i>Instagram</div>
+            <div class="collapsible-header"><i class="material-icons">Instagram</i></div>
             <div class="collapsible-body"><span>@Elise’sPumpkinloaves</span></div>
           </li>
           <li>
-            <div class="collapsible-header"><i class="material-icons">facebook</i>Facebook</div>
+            <div class="collapsible-header"><i class="material-icons">Facebook</i></div>
             <div class="collapsible-body"><span>@Elise’sPumpkinloaves</span></div>
           </li>
           <li>
-            <div class="collapsible-header"><i class="material-icons">ondemand_video</i>TikTok</div>
+            <div class="collapsible-header"><i class="material-icons">TikTok</i></div>
             <div class="collapsible-body"><span>@Elise’sPumpkinloaves</span></div>
           </li>
         </ul>
@@ -71,6 +70,14 @@
     <footer>
         <p>&copy; 2024 Elise’s Pumpkin Loaf Bakery. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+      });
+    </script>
 </body>
 
 </html>
